@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.drurls/drurls",
+  "title": "DrUrls",
+  "description": "Audit websites for SEO from your AI assistant: scores, issues with fixes, Google indexability",
+  "version": "1.0.0",
+  "websiteUrl": "https://drurls.com",
+  "repository": { "url": "https://github.com/DrUrls/mcp", "source": "github" },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://drurls.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: a DrUrls API key from https://drurls.com/dashboard/api-keys. Clients that support OAuth (Claude, ChatGPT, Claude Code, Cursor, VS Code) connect without one.",
+          "value": "Bearer {api_key}",
+          "isSecret": true,
+          "isRequired": false,
+          "variables": { "api_key": { "description": "DrUrls API key (starts with drseo_sk_)", "isSecret": true } }
+        }
+      ]
+    }
+  ]
+}
