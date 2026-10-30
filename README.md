@@ -10,18 +10,30 @@
 
 | Client | How |
 |---|---|
-| Claude (claude.ai, Desktop) | Settings → Connectors → Add custom connector → `https://drurls.com/mcp` |
+| Claude (claude.ai, Desktop) | [Connect from Claude's directory](https://claude.ai/directory/drurls), or Settings → Connectors → Add custom connector → `https://drurls.com/mcp` |
 | ChatGPT | Add a custom connector (developer mode) with `https://drurls.com/mcp`, OAuth |
 | Claude Code | `claude mcp add --transport http drurls https://drurls.com/mcp`, then `/mcp` to sign in — or the [plugin](https://github.com/DrUrls/claude-plugins) |
-| Cursor | `~/.cursor/mcp.json`: `{ "mcpServers": { "drurls": { "url": "https://drurls.com/mcp" } } }` |
+| Cursor | [Add to Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=drurls&config=eyJ1cmwiOiJodHRwczovL2RydXJscy5jb20vbWNwIn0%3D) ([Cursor Directory](https://cursor.directory/plugins/drurls)), or `~/.cursor/mcp.json`: `{ "mcpServers": { "drurls": { "url": "https://drurls.com/mcp" } } }` |
 | VS Code | `.vscode/mcp.json`: `{ "servers": { "drurls": { "type": "http", "url": "https://drurls.com/mcp" } } }` |
 
 Step by step: https://drurls.com/assistants
+
+## Listed on
+
+- [Claude connector directory](https://claude.ai/directory/drurls)
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.drurls): `com.drurls/drurls`
+- [Glama](https://glama.ai/mcp/connectors/com.drurls/drurls)
+- [Cursor Directory](https://cursor.directory/plugins/drurls)
+- [mcp.so](https://mcp.so/servers/drurls)
+
+The editor extension, **Dr Urls Sync**, is on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=drurls.drurls-sync) and [Open VSX](https://open-vsx.org/extension/drurls/drurls-sync).
 
 ## Tools
 
 Costs as of the last update of this file; each tool's description states its current price.
 
+| Tool | What it does | Cost |
+|---|---|---|
 | `list_tester_offers` | Browse the catalogue of tests a real person will run on a real device: mobile UX on a handset, end-to-end checkout, a screen-reader pass by somebody who uses one daily, native-speaker translation review, and more. | free |
 | `hire_tester` | Order one of the tests from list_tester_offers. | price of the offer |
 | `list_sites` | List every site in the user's organization with its latest completed audit: SEO score, grade, issues found, pages crawled, when it was last scanned, and whether a scan is running right now. | free |
