@@ -3,9 +3,21 @@
   "name": "com.drurls/drurls",
   "title": "DrUrls",
   "description": "Audit websites for SEO from your AI assistant: scores, issues with fixes, Google indexability",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://drurls.com",
-  "repository": { "url": "https://github.com/DrUrls/mcp", "source": "github" },
+  "icons": [
+    {
+      "src": "https://drurls.com/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/DrUrls/mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
@@ -17,7 +29,12 @@
           "value": "Bearer {api_key}",
           "isSecret": true,
           "isRequired": false,
-          "variables": { "api_key": { "description": "DrUrls API key (starts with drseo_sk_)", "isSecret": true } }
+          "variables": {
+            "api_key": {
+              "description": "DrUrls API key (starts with drseo_sk_)",
+              "isSecret": true
+            }
+          }
         }
       ]
     }
