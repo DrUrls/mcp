@@ -1,0 +1,11 @@
+{
+  "name": "drurls",
+  "version": "1.0.1",
+  "description": "Audit websites for SEO from Gemini CLI: scores, issues with exact fixes, Google indexability.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "drurls": {
+      "httpUrl": "https://drurls.com/mcp"
+    }
+  }
+}
